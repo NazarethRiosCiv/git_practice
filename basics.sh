@@ -4,7 +4,9 @@
 git init
 
 # The word init means initialize. The command sets up all the tools git needs
-# to begin tracking changes made to the project.
+# to begin tracking changes made to the project. This step creates a hidden
+# .get directory in your project folder, which the git software recognizes and
+# uses to store all the metadata and version history for the project. 
 
 #### Git Workflow ####
 
@@ -37,10 +39,14 @@ git status
 git add filename
 
 # Notice that git indicates the changes to be committed. It tells us the file was added
-# to the staging area.
+# to the staging area. The command tells git which files to include in a commit. 
 
 # If you wish to add all the files in the folder to the staging area, use:
-git add .
+git add .      
+git add --all
+git add -A
+
+# The arguments '.', '--all', and '-A' indicate to include all files in the directory 
 
 #### Git Diff ####
 
@@ -58,6 +64,7 @@ git diff filename
     # Should be brief (50 characters or less)
 
 git commit -m "the message to write"
+git commit -message "the message to write"
 
 #### Git Log ####
 
