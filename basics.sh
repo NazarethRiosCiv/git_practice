@@ -64,7 +64,7 @@ git diff filename
     # Should be brief (50 characters or less)
 
 git commit -m "the message to write"
-git commit -message "the message to write"
+git commit --message "the message to write"
 
 #### Git Log ####
 
