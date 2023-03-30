@@ -18,7 +18,7 @@ git commit -m "First commit"
 
 # To push the created repository to GitHub (using HTTPS):
 git remote add origin https://github.com/rest_of_url/
-git push -u origin main
+git push -u origin master
 
 # In git, a remote refers to a remote (cloud) version of the same
 # repository, which is typically on a sever somewhere. The origin 
@@ -32,7 +32,7 @@ git push -u origin main
 # The -f (or --force) flag stands for force. This will automatically
 # overwrite everything in the remote directory. We're using it to 
 # overwrite the default README file that GitHub initialized (if you
-# don't have it initialized, the -f flag isn't necessart)
+# don't have it initialized, the -f flag isn't necessary)
 
 
  
