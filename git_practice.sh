@@ -18,7 +18,7 @@ git commit -m "First commit"
 
 # To push the created repository to GitHub (using HTTPS):
 git remote add origin https://github.com/rest_of_url/
-git push -u origin master
+git push -u origin main
 
 # In git, a remote refers to a remote (cloud) version of the same
 # repository, which is typically on a sever somewhere. The origin 
