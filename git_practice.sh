@@ -1,28 +1,36 @@
 
-#### Git Cloning ##################################################################################
+#### Git Practice #################################################################################
 
-## Git Clone **************************************************************************************
+# To make a new directory to practice:
+mkdir git_practice
 
-# Git cloning is a command line utility which is used to target an existing repository and create a 
-# clone, or copy, of the target repository. If a project has already been set up in a central
-# repository, cloning the most common way for users to obtain a development copy. 
-
-# Like initialization, cloning is generally a one-time operation. Once a developer has obtained a 
-# working copy, all version control operations and collaborations are managed through their local 
-# repository.
-
-# As a convenience, cloning automatically creates a remote connection called "origin" pointing back 
-# to the original repository. 
-
-# To clone an existing repository from GitHub:
-git clone https://github.com/NazarethRiosCiv/git_practice.git
-cd git_practice   # change to the directory of the cloned project
-ls -l             # view detailed list of contents
-
-# By default this will place the git project into a folder within the the current directory of the 
-# same name as the git project.
-
-# To clone an existing repository to a specific folder:
-git clone https://github.com/NazarethRiosCiv/git_practice.git git_practice
+# To make the new directory your working directory:
 cd git_practice
-ls -l
+
+# To turn the current (empty) directory into a fresh Git repository:
+git init
+
+# To create a new README file with sample text:
+echo \# Hello Git and GitHub >> README.txt
+
+# To add the new file to the Git staging area:
+git add README.md
+
+# To make your first commit with the new README file:
+git commit -m "First commit"
+
+# To push the created repository to GitHub (using HTTPS):
+git remote add origin https://github.com/rest_of_url/
+git branch -M main
+git push -u origin main
+
+# In git, a remote refers to a remote (cloud) version of the same repository, which is typically on 
+# a sever somewhere. The origin argument is the default name git gives to a remote server.
+
+# The -u (or --set-upstream) flag sets the remote origin as the upstream reference. This allows you 
+# to later perform git push and git pull commands without having to specify an origin since we 
+# always want GitHub in this case.
+
+# The -f (or --force) flag stands for force. This will automatically overwrite everything in the 
+# remote directory. We're using it to overwrite the default README file that GitHub initialized (if 
+# you don't have it initialized, the -f flag isn't necessary).
